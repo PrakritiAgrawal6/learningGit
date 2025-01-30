@@ -6,5 +6,10 @@ jobs:
      job1: 
           runs-on: ubuntu-latest
           steps:
-                -name: Print
-                -run: echo "display data"
+               -name: Print
+               -run: echo "display data"
+     job2: 
+         runs-on: window-latest
+         steps:
+              -name: Read
+              -run: echo "hey!"
