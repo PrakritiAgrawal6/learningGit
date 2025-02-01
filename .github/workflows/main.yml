@@ -2,7 +2,9 @@ name: GitHub Context and Environment Variables
 
 on: 
   push: 
-  workflow_dispatch:
+     branches:
+      - main
+      - develop
 
 jobs:
   echo-context:
