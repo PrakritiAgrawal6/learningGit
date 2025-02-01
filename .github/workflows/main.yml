@@ -1,4 +1,4 @@
-name: Github context
+name: GitHub Context and Environment Variables
 
 on: 
   push: 
@@ -15,3 +15,4 @@ jobs:
           echo "SHA is ${{ github.sha }}"
           echo "Actor is ${{ github.actor }}"
           echo "Run Id is ${{ github.run_id }}"
+          echo "Variable value is ${{ vars.MY_VAR }}
