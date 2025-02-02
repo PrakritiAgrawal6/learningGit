@@ -1,0 +1,15 @@
+name: Setting Environment
+
+on: 
+  workflow_dispatch:
+    inputs:
+      TARGET_ENVIRONMENT:
+        type: environment
+        default: dev
+
+jobs:
+  echo-env:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.TARGET_ENVIRONMENT }}
+    steps:
+      - run: echo "Env is ${{ secrets.DEV_VAR }}"
